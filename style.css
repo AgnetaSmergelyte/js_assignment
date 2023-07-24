@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, button, select {
+  padding: 10px 20px;
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+}
+
+i {
+  pointer-events: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.login p {
+  color: red;
+}
+
+.main-page, .profile-page, .movies, .movie-reservation {
+  display: none;
+  width: 80vw;
+  background-color: #f1f1b4;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+  gap: 20px;
+  background-color: #ecbd65;
+}
+.top-nav .user-avatar {
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: #963a0a solid 2px;
+}
+.top-nav p {
+  font-size: 1.5rem;
+  color: #963a0a;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.main-menu .profile-card, .main-menu .movies-card {
+  background-color: #f5d591;
+  width: 30%;
+  margin: 30px 0;
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main-menu .profile-card:hover, .main-menu .movies-card:hover {
+  background-color: #ecbd65;
+}
+.main-menu .profile-card i, .main-menu .movies-card i {
+  font-size: 150px;
+  margin: 30px 0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.user-profile img {
+  width: 200px;
+}
+.user-profile .profile-change {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 50px);
+  align-items: center;
+}
+.user-profile .profile-change p {
+  color: red;
+}
+
+.movies {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.movie-img-wrapper {
+  width: 250px;
+  height: 400px;
+}
+.movie-img-wrapper img {
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.movie-img-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.w100 {
+  width: 100%;
+  text-align: center;
+}
+
+.movie-reservation {
+  padding: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-info img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.seats {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  grid-template-rows: repeat(4, 80px);
+  gap: 5px;
+  justify-content: center;
+}
+.seats > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: green;
+  transition: 0.2s all ease;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.seats > div:hover {
+  color: darkgreen;
+  font-size: 2rem;
+}
+.seats > div img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: green solid 2px;
+}
+.seats > div > div {
+  font-size: 1rem;
+}
+.seats > div > div:hover {
+  font-size: 1rem;
+}
+
+.selected {
+  background-color: #98e86a;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
